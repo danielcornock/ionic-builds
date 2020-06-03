@@ -5,4 +5,13 @@
   width: 90%;
 }
 
+@mixin button-default {
+  border-radius: $br-max;
+  padding: 10px 40px;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 $br-max: 9999px;

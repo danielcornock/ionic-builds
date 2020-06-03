@@ -24,10 +24,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &-header {
     color: $color-white;
+    text-transform: uppercase;
     font-size: 56px;
     font-weight: 700;
 
@@ -39,18 +45,40 @@
   &-description {
     font-size: 27px;
     font-weight: 300;
-    color: $color-light-text;
+    color: $color-light;
     margin-bottom: 20px;
+    max-width: 850px;
+    margin-bottom: 30px;
   }
 
   &-button {
-    border-radius: $br-max;
-    font-weight: 500;
+    @include button-default;
     background-color: $color-highlight;
     color: $color-white;
-    padding: 10px 30px;
-    display: inline-block;
-    font-size: 18px;
-    text-decoration: none;
+  }
+
+  &-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: $color-white;
+    background-color: rgba(172, 197, 249, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &-bannerText {
+    font-weight: 200;
+    font-size: 22px;
+  }
+
+  &-bannerButton {
+    @include button-default;
+    border: 2px solid $color-white;
+    color: $color-white;
+    margin-left: 20px;
   }
 }
