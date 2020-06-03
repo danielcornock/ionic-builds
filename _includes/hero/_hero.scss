@@ -21,7 +21,7 @@
 
   &-content {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 50px);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -36,6 +36,7 @@
     text-transform: uppercase;
     font-size: 56px;
     font-weight: 700;
+    margin-bottom: 10px;
 
     &--highlight {
       color: $color-light-text;

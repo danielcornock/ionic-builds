@@ -1,0 +1,75 @@
+.features {
+  background-color: $color-darkest;
+
+  &-container {
+    @include container-element;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    background-color: $color-default;
+    border: 1px solid $color-highlight;
+    border-radius: $br-10;
+    overflow: hidden;
+
+    & + & {
+      margin-left: 30px;
+    }
+
+    &:first-of-type,
+    &:last-of-type {
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  &-iconContainer {
+    @include center-contents;
+    background-color: $color-highlight;
+    height: 140px;
+  }
+
+  &-icon {
+    height: 70px;
+  }
+
+  &-itemContent {
+    padding: 30px 30px 30px;
+    color: $color-white;
+  }
+
+  &-itemHeading {
+    font-size: 26px;
+    margin-bottom: 10px;
+
+    &--highlight {
+      color: $color-highlight;
+    }
+  }
+
+  &-itemText {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: $color-light;
+    line-height: 1.3;
+  }
+
+  &-divider {
+    margin: 70px auto;
+    width: 30%;
+    border-color: $color-highlight;
+  }
+
+  &-statement {
+    color: $color-light-text;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.3;
+  }
+}

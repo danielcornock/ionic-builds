@@ -14,4 +14,10 @@
   font-weight: 500;
 }
 
+@mixin center-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 $br-max: 9999px;
+$br-10: 10px;

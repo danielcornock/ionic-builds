@@ -1,0 +1,27 @@
+<div class="features-container">
+  <ul class="features-list">
+    {% for feature in site.data.features %}
+    <div class="features-item">
+      <div class="features-iconContainer">
+        <img
+          src="{{ site.svg_dir | append: feature.icon | absolute_url }}"
+          alt=""
+          class="features-icon"
+        />
+      </div>
+      <div class="features-itemContent">
+        <h3 class="features-itemHeading">{{ feature.heading }}</h3>
+        <p class="features-itemText">{{ feature.text }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </ul>
+
+  <hr class="features-divider" />
+
+  <p class="features-statement">
+    At Ionic Builds, we endeavour to make the building process less intrusive,
+    ensuring a safe and tidy workplace throughout the build and, crucially,
+    treating your property and possessions with the utmost care and respect.
+  </p>
+</div>
