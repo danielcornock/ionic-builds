@@ -1,0 +1,12 @@
+- text: info@ionicbuilds.co.uk
+  link: mailto:info@ionicbuilds.co.uk
+  icon: fas fa-envelope
+- text: 07585441767
+  link: tel:07585441767
+  icon: fas fa-phone
+- text: Bristol, UK
+  link: www.google.com/maps
+  icon: fas fa-map-marker-alt
+- text: Ionic Builds
+  link: www.facebook.com/ionicbuilds
+  icon: fab fa-facebook-square

@@ -1,0 +1,69 @@
+.header {
+  &-top {
+    background-color: $color-darkest;
+
+    &Content {
+      @include container-element;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+    }
+  }
+
+  &-main {
+    background-color: $color-default;
+    position: relative;
+    z-index: 100;
+    box-shadow: 2px 2px 8px rgba(43, 46, 58, 0.9);
+
+    &Content {
+      @include container-element;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-logo {
+    height: 50px;
+  }
+
+  &-contactContainer {
+    color: $color-white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+
+    & + & {
+      margin-left: 50px;
+    }
+
+    &:last-of-type {
+      margin-left: auto;
+    }
+  }
+
+  &-contactText {
+  }
+
+  &-contactIcon {
+    margin-right: 10px;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &-navLink {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 18px;
+
+    & + & {
+      margin-left: 120px;
+    }
+  }
+}

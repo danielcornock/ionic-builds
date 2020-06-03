@@ -1,0 +1,8 @@
+@mixin container-element {
+  margin: auto;
+  max-width: 1200px;
+  padding: 25px;
+  width: 90%;
+}
+
+$br-max: 9999px;

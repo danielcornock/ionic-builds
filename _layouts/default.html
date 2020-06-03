@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header/head.html %}
+  </head>
+  <body>
+    <header>
+      {% include header/header.html %}
+    </header>
+    <main>{{ content }}</main>
+    <footer>
+      {% include footer/footer.html %}
+    </footer>
+    <script src="{{ 'assets/scripts/index.js' | absolute_url }}"></script>
+  </body>
+</html>

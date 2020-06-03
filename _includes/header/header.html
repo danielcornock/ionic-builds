@@ -1,0 +1,29 @@
+<div class="header-container">
+  <div class="header-top">
+    <div class="header-topContent">
+      {% for contact in site.data.headerContact %}
+      <a class="header-contactContainer" href="{{ contact.link }}">
+        <div class="header-contactIcon">
+          <i class="{{ contact.icon }}"></i>
+        </div>
+        <p class="header-contactText">{{ contact.text }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="header-mainContent">
+      <img
+        src="{{ 'assets/images/branding.png' | absolute_url }}"
+        alt=""
+        class="header-logo"
+      />
+
+      <nav class="header-nav">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" class="header-navLink">{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </div>
+</div>
