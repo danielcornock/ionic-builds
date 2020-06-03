@@ -5,11 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: _site/navigation.yml
+  path: _data/navigation.yml
   label: Navigation
-  match: "**/*"
 - type: document
-  path: _site/headerContact.yml
+  path: _data/headerContact.yml
   label: Top Bar Contact Info
 - type: document
   path: _data/features.yml
