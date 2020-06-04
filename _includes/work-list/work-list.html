@@ -1,0 +1,23 @@
+<ul class="workList-container">
+  {% for work in site.work %}
+  <li class="workList-item">
+    <img
+      src="{{ site.uploads_dir | append: work.img | absolute_url }}"
+      alt=""
+      class="workList-image"
+    />
+    <div class="workList-content">
+      <h3 class="workList-title">{{ work.title }}</h3>
+      <p class="workList-description">{{ work.description }}</p>
+      {% if work.viewMore %}
+      <a href="{{ work.url }}" class="workList-viewMore">Read more</a>
+      {% endif %}
+      <ul class="workList-tags">
+        {% for tag in work.tags %}
+        <li class="workList-tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

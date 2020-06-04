@@ -9,6 +9,11 @@ markdown: kramdown
 permalink: /our-work/:title
 image_dir: /assets/images/
 svg_dir: /assets/svg/
+uploads_dir: /assets/images/uploads/
+
+collections:
+  work:
+    output: true
 
 include: ['_pages']
 # Exclude from processing.

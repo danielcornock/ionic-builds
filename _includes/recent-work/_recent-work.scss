@@ -1,0 +1,13 @@
+.recentWork {
+  background-color: $color-darkest;
+  @include section-divider($color-darkest);
+
+  &-container {
+    @include container-element;
+    @include section-container;
+  }
+
+  &-heading {
+    @include section-header;
+  }
+}

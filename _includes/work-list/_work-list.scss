@@ -1,0 +1,62 @@
+.workList {
+  &-item {
+    list-style-type: none;
+    background-color: $color-default;
+    color: $color-white;
+    border-radius: $br-10;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  &-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  &-tag {
+    list-style-type: none;
+  }
+
+  &-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  &-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+
+  &-tags {
+    margin-top: 30px;
+  }
+
+  &-description {
+    font-weight: 300;
+    line-height: 1.3;
+  }
+
+  &-tag {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    background-color: $color-highlight;
+    color: $color-white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  &-viewMore {
+    color: $color-highlight;
+  }
+}
