@@ -1,0 +1,24 @@
+<div class="services-container">
+  <h2 class="services-heading">What We Offer</h2>
+
+  <div class="services-list">
+    {% for service in site.data.services %}
+    <ul class="services-item">
+      <li class="services-iconContainer">
+        {% if service.fa %}
+        <i class="services-icon {{service.fa}}"></i>
+        {% elsif service.material %}
+        <i class="services-icon material-icons">{{ service.material }}</i>
+        {% else %}
+        <img
+          class="services-img"
+          src="{{ service.img | absolute_url }}"
+          alt=""
+        />
+        {% endif %}
+      </li>
+      <h3 class="services-title">{{ service.name }}</h3>
+    </ul>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,33 @@
+- name: New Builds
+  material: build
+- name: Refurbishments
+  material: home
+- name: Conversions
+  material: account_balance
+- name: Extensions
+  material: arrow_forward
+- name: Kitchens
+  material: kitchen
+- name: Bathrooms
+  fa: fas fa-bath
+- name: Bespoke Carpentry
+  fa: fas fa-hammer
+- name: Plastering
+  img: assets/images/plastering.png
+- name: Roofing
+  fa: fas fa-chess-rook
+- name: Flooring
+  fa: fas fa-bars
+- name: Plumbing
+  fa: fas fa-toilet
+- name: Heating
+  fa: fas fa-fire
+- name: Sash Windows
+  fa: fas fa-grip-vertical
+- name: Double Glazing
+  fa: fas fa-th-large
+- name: Landscaping
+  fa: fas fa-tree
+- name: Decorating
+  link: https://www.jaksdecorationanddesign.co.uk
+  fa: fas fa-paint-roller

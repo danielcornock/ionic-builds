@@ -1,0 +1,46 @@
+.services {
+  background-color: $color-default;
+  @include section-divider($color-default);
+
+  &-container {
+    @include container-element;
+    @include section-container;
+  }
+
+  &-heading {
+    @include section-header;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-item {
+    color: $color-white;
+    margin: 10px;
+    background-color: $color-highlight;
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: $br-10;
+    text-align: center;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &-iconContainer {
+    height: 30px;
+  }
+
+  &-icon {
+    font-size: 24px !important;
+  }
+
+  &-img {
+    height: 30px;
+  }
+}

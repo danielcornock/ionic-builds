@@ -1,14 +1,16 @@
 .features {
   background-color: $color-darkest;
+  @include section-divider($color-darkest);
 
   &-container {
     @include container-element;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    @include section-container;
   }
 
   &-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-gap: 30px;
   }
 
   &-item {
@@ -16,15 +18,12 @@
     border: 1px solid $color-highlight;
     border-radius: $br-10;
     overflow: hidden;
-
-    & + & {
-      margin-left: 30px;
-    }
+    text-align: center;
 
     &:first-of-type,
     &:last-of-type {
       position: relative;
-      top: 10px;
+      top: 20px;
     }
   }
 

@@ -5,6 +5,11 @@
   width: 90%;
 }
 
+@mixin section-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 @mixin button-default {
   border-radius: $br-max;
   padding: 10px 40px;
@@ -19,5 +24,40 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin section-divider($color) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 30px;
+    width: 30px;
+    background-color: $color;
+    z-index: 10;
+  }
+}
+
+@mixin section-header {
+  color: $color-white;
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 8%;
+    background-color: $color-white;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 $br-max: 9999px;
 $br-10: 10px;
