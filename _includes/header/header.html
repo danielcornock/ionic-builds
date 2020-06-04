@@ -13,11 +13,13 @@
   </div>
   <div class="header-main">
     <div class="header-mainContent">
-      <img
-        src="{{ 'assets/images/branding.png' | absolute_url }}"
-        alt=""
-        class="header-logo"
-      />
+      <a href="./" class="header-homeLink">
+        <img
+          src="{{ 'assets/images/branding.png' | absolute_url }}"
+          alt=""
+          class="header-logo"
+        />
+      </a>
 
       <nav class="header-nav">
         {% for item in site.data.navigation %}

@@ -15,6 +15,13 @@ collections:
   work:
     output: true
 
+defaults:
+  - scope:
+      path: ''
+      type: 'work'
+    values:
+      layout: 'work/work'
+
 include: ['_pages']
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
