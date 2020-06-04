@@ -1,0 +1,12 @@
+.ourWork {
+  background-color: $color-darkest;
+
+  &-container {
+    @include container-element;
+    @include section-container;
+  }
+
+  &-heading {
+    @include section-header;
+  }
+}
