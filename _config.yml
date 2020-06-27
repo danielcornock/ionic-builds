@@ -20,7 +20,7 @@ defaults:
       path: ''
       type: 'work'
     values:
-      layout: 'work/work'
+      layout: 'work-item-page/work-item-page'
 
 include: ['_pages']
 # Exclude from processing.

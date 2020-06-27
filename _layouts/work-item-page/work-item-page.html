@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="workItemPage">
+  <div class="workItemPage-container">
+    <h3 class="workItemPage-title">{{ page.title }}</h3>
+    <img
+      src="{{ site.uploads_dir | append: page.img | absolute_url }}"
+      alt=""
+      class="workItemPage-bannerImage"
+    />
+
+    <div class="workItemPage-content">
+      {{ content }}
+    </div>
+  </div>
+</div>
