@@ -1,0 +1,17 @@
+<div class="testimonials-container">
+  <h2 class="testimonials-heading">Don't just take our word for it.</h2>
+
+  <div class="testimonials-carousel">
+    <div class="testimonials-carouselContent">
+      {% for test in site.data.testimonials %}
+      <div class="testimonials-item">
+        <p class="testimonials-excerpt">{{ test.excerpt }}</p>
+        <p class="testimonials-content">{{ test.content }}</p>
+        <p class="testimonials-name">{{ test.name }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="testimonials-bubbles"></div>
+  </div>
+</div>

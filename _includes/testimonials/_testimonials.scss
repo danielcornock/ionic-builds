@@ -1,0 +1,65 @@
+.testimonials {
+  background-color: $color-default;
+
+  &-container {
+    @include container-element;
+    @include section-container;
+  }
+
+  &-heading {
+    @include section-header;
+  }
+
+  &-carousel {
+    overflow: hidden;
+  }
+
+  &-carouselContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 100%);
+    transition: 500ms;
+    left: 0;
+  }
+
+  &-item {
+    width: 100%;
+    background-color: $color-light-text;
+    border-radius: $br-10;
+    padding: 30px;
+  }
+
+  &-excerpt {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+
+  &-name {
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: italic;
+  }
+
+  &-bubbles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &-bubble {
+    height: 20px;
+    width: 20px;
+    background-color: $color-highlight;
+    border-radius: $br-max;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-light-text;
+    }
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+}
